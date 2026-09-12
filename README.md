@@ -1,26 +1,16 @@
-# Software Factory POC
+# Software Factory — public projection
 
-Projecció pública d'una prova de concepte de Software Factory agèntica. El
-repositori mostra una selecció sanejada de contractes, polítiques, codi de
-governança, escenaris i plantilles reproduïbles.
+This repository is a curated, read-only public projection of a private
+Software Factory proof of concept.
 
-Forgejo és l'única font de veritat. Aquest repositori és una projecció passiva
-i retardada: no accepta canvis operatius, no replica l'historial privat i no
-conté credencials, evidència d'execució, configuració interna d'infraestructura
-ni workflows actius de GitHub Actions.
+It contains selected reusable material such as governance contracts, agent
+roles, standards, metrics, golden paths, templates, and sanitized benchmark
+fixtures. Operational infrastructure, credentials, private evidence, internal
+network details, CI configuration, and repository history are deliberately
+excluded.
 
-La projecció es construeix amb una llista blanca versionada i s'atura si detecta
-un tipus de fitxer no admès, una ruta prohibida o un patró sensible. Per tant,
-una actualització de Forgejo pot trigar a aparèixer aquí o quedar bloquejada fins
-que es resolgui una troballa.
+The private Forgejo repository remains the source of truth. This GitHub
+repository has an independent publication history and must not be used as an
+operational upstream.
 
-## Contingut principal
-
-- `factory-core/`: estàndards, polítiques i components portables seleccionats.
-- `templates/fastapi-service/`: plantilla de servei FastAPI.
-- `benchmarks/incidents-api/`: aplicació de referència.
-- `benchmarks/scenarios/`: definició dels escenaris de benchmark.
-
-El mecanisme de selecció es pot auditar a
-`factory-core/policies/public-repository-projection-v1.json` i
-`factory-core/tools/public_repository_projection.py`.
+GitHub Actions is intentionally disabled for this repository.
