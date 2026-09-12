@@ -14,3 +14,8 @@ repository has an independent publication history and must not be used as an
 operational upstream.
 
 GitHub Actions is intentionally disabled for this repository.
+
+## License
+
+The material in this public projection is available under the Apache License
+2.0. See [LICENSE](LICENSE).
