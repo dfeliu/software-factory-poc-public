@@ -1,0 +1,12 @@
+Alembic revisions belong in `versions/`.
+
+Create and review revisions with:
+
+    uv run --locked alembic revision --autogenerate -m "describe change"
+
+Apply them explicitly with:
+
+    uv run --locked alembic upgrade head
+
+There is intentionally no initial revision because this template has no domain
+model yet.

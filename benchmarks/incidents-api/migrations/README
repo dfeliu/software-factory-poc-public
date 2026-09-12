@@ -1,0 +1,12 @@
+Alembic revisions belong in `versions/`.
+
+Create and review revisions with:
+
+    uv run --locked alembic revision --autogenerate -m "describe change"
+
+Apply them explicitly with:
+
+    uv run --locked alembic upgrade head
+
+The initial `0001_create_incidents` revision creates the incident model,
+including the `deleted_at` soft-delete timestamp.

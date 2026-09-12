@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "description": "Conservative allow-list for the passive public GitHub projection.",
+  "entries": [
+    {"source": "docs/public/README.md", "target": "README.md"},
+    {"source": "factory-core/agents", "target": "factory-core/agents"},
+    {"source": "factory-core/golden-paths", "target": "factory-core/golden-paths"},
+    {"source": "factory-core/governance", "target": "factory-core/governance"},
+    {"source": "factory-core/metrics", "target": "factory-core/metrics"},
+    {"source": "factory-core/orchestration", "target": "factory-core/orchestration"},
+    {"source": "factory-core/policies/agent-permissions.md", "target": "factory-core/policies/agent-permissions.md"},
+    {"source": "factory-core/policies/deployment.md", "target": "factory-core/policies/deployment.md"},
+    {"source": "factory-core/policies/governance-levels.md", "target": "factory-core/policies/governance-levels.md"},
+    {"source": "factory-core/policies/pull-request.md", "target": "factory-core/policies/pull-request.md"},
+    {"source": "factory-core/policies/reviewer.md", "target": "factory-core/policies/reviewer.md"},
+    {"source": "factory-core/policies/secrets.md", "target": "factory-core/policies/secrets.md"},
+    {"source": "factory-core/policies/security-vulnerability-exceptions.md", "target": "factory-core/policies/security-vulnerability-exceptions.md"},
+    {"source": "factory-core/policies/public-repository-projection-v1.json", "target": "factory-core/policies/public-repository-projection-v1.json"},
+    {"source": "factory-core/standards", "target": "factory-core/standards"},
+    {"source": "factory-core/tools/public_repository_projection.py", "target": "factory-core/tools/public_repository_projection.py"},
+    {"source": "templates/fastapi-service", "target": "templates/fastapi-service"},
+    {"source": "benchmarks/incidents-api", "target": "benchmarks/incidents-api"},
+    {"source": "benchmarks/scenarios", "target": "benchmarks/scenarios"}
+  ],
+  "blocked_globs": [
+    ".env",
+    ".env.local",
+    ".env.production",
+    ".env.development",
+    ".env.test",
+    "*.key",
+    "*.pem",
+    "*.p12",
+    "*.pfx",
+    "credentials.json",
+    "secrets.json",
+    "__pycache__",
+    "*.pyc"
+  ],
+  "checks": [
+    "private_ipv4",
+    "private_key",
+    "credential_url",
+    "token_prefix",
+    "private_path",
+    "operational_path",
+    "internal_hostname",
+    "email_address"
+  ]
+}
